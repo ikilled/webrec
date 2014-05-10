@@ -40,3 +40,355 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/webrec/index.php/RecordVideo/publish
 ---
+2014/05/10 13:13:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('UPDATE')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/UPDATE')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/UPDATE
+---
+2014/05/10 13:13:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/update
+---
+2014/05/10 13:13:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "1".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('1')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('1')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/1/update')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/1/update
+---
+2014/05/10 13:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:157
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(89): VideoController->loadModel('12')
+#1 [internal function]: VideoController->actionUpdate('12')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/update/12
+---
+2014/05/10 13:13:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:157
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(89): VideoController->loadModel('1')
+#1 [internal function]: VideoController->actionUpdate('1')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/update/1
+---
+2014/05/10 13:13:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/update/
+---
+2014/05/10 13:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:157
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(89): VideoController->loadModel('0')
+#1 [internal function]: VideoController->actionUpdate('0')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/update')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/update/0
+---
+2014/05/10 13:21:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/view
+---
+2014/05/10 15:00:34 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "video/index".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:878
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(782): CController->renderPartial('video/index', NULL, true)
+#1 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\SiteController.php(32): CController->render('video/index')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/webrec/
+---
+2014/05/10 15:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php/video/create
+---
+2014/05/10 15:09:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php/video/create
+---
+2014/05/10 15:10:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('id')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('id')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/id/v-fddd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/id/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+---
+2014/05/10 15:10:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view/v-fd...')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/view/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+---
+2014/05/10 15:10:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/view/
+---
+2014/05/10 15:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:157
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(55): VideoController->loadModel('1')
+#1 [internal function]: VideoController->actionView('1')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/view/1
+---
+2014/05/10 15:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php
+---
+2014/05/10 15:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "uuid".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('uuid')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('uuid')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/uuid/v-fd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/uuid/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+---
+2014/05/10 15:25:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php
+---
+2014/05/10 15:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('id')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('id')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/id/v-fddd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/id/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+---
+2014/05/10 15:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php
+---
+2014/05/10 15:25:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'v-fddd7bd0-b9da-0131-2b21-1231390c0c78' for key 'uuid'. The SQL statement executed was: INSERT INTO `video` (`uuid`, `thumb_url`, `small_thumb_url`, `video_url`, `timestamp`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/10 15:25:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'v-fddd7bd0-b9da-0131-2b21-1231390c0c78' for key 'uuid'. The SQL statement executed was: INSERT INTO `video` (`uuid`, `thumb_url`, `small_thumb_url`, `video_url`, `timestamp`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\_MATEJ\xampp\htdocs\webrec\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(61): CActiveRecord->save()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(49): VideoController->actionCreate()
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/create')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/create
+HTTP_REFERER=http://localhost/webrec/index.php/video/create
+---
+2014/05/10 15:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "v-fddd7bd0-b9da-0131-2b21-1231390c0c78".' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:483
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(270): CController->missingAction('v-fddd7bd0-b9da...')
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('v-fddd7bd0-b9da...')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/v-fddd7bd...')
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webrec/index.php/video/v-fddd7bd0-b9da-0131-2b21-1231390c0c78
+---
+2014/05/10 15:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:145
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(43): VideoController->loadModel('0')
+#1 [internal function]: VideoController->actionView('0')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/0
+---
