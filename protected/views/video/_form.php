@@ -4,10 +4,40 @@
 /* @var $form CActiveForm */
 ?>
 
+<script src='http://cameratag.com/2.1/cameratag.js' type='text/javascript'></script>
+<script type='text/javascript'>
+
+	CameraTag.observe('cam1', 'published', function(){
+
+		alert('js published START');
+		var myCamera = CameraTag.cameras["cam1"];
+		var myVideo = myCamera.getVideo();
+		//alert(JSON.stringify(myVideo));
+		//alert(JSON.stringify(myVideo.formats['qvga']));
+		//alert(JSON.stringify(myVideo.formats[0]));
+		//alert(JSON.stringify(myVideo.formats.qvga));
+		//alert(JSON.stringify(myVideo.formats.qvga.video_url));
+
+		document.getElementById('Video_uuid').value = myVideo.uuid;		
+		document.getElementById('Video_video_url').value = myVideo.formats.qvga.video_url;
+		document.getElementById('Video_thumb_url').value = myVideo.formats.qvga.thumb_url;
+		document.getElementById('Video_small_thumb_url').value = myVideo.formats.qvga.small_thumb_url;
+		document.getElementById('Video_timestamp').value = myVideo.created_at;
+		alert('created at: '+myVideo.created_at);
+
+		alert('submitting FORM...');
+		document.getElementById("videoForm").submit();
+		alert('published SUBMITTED END');
+
+
+	});	//CameraTag.observe if published
+	
+</script>
+
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'video-form',
+	'id'=>'videoForm',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -15,42 +45,21 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'uuid'); ?>
-		<?php echo $form->textField($model,'uuid',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'uuid'); ?>
-	</div>
+		<?php echo $form->hiddenField($model,'id'); ?>
+		<?php echo $form->hiddenField($model,'uuid'); ?>
+		<?php echo $form->hiddenField($model,'thumb_url'); ?>
+		<?php echo $form->hiddenField($model,'small_thumb_url'); ?>
+		<?php echo $form->hiddenField($model,'video_url'); ?>
+		<?php echo $form->hiddenField($model,'timestamp'); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'thumb_url'); ?>
-		<?php echo $form->textField($model,'thumb_url',array('size'=>60,'maxlength'=>1024)); ?>
-		<?php echo $form->error($model,'thumb_url'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'small_thumb_url'); ?>
-		<?php echo $form->textField($model,'small_thumb_url',array('size'=>60,'maxlength'=>1024)); ?>
-		<?php echo $form->error($model,'small_thumb_url'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'video_url'); ?>
-		<?php echo $form->textField($model,'video_url',array('size'=>60,'maxlength'=>1024)); ?>
-		<?php echo $form->error($model,'video_url'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'timestamp'); ?>
-		<?php echo $form->textField($model,'timestamp'); ?>
-		<?php echo $form->error($model,'timestamp'); ?>
+	<div style='width:320px;height:240px;background:#eee;border:2px solid grey;'>
+	<camera id='cam1' data-app-id='a-449347e0-b9da-0131-228e-1231390c0c78'></camera>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton('SUBMIT'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

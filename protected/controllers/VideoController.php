@@ -7,6 +7,7 @@ class VideoController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
+	public $defaultAction='create';
 
 	/**
 	 * @return array action filters
@@ -58,8 +59,9 @@ class VideoController extends Controller
 		if(isset($_POST['Video']))
 		{
 			$model->attributes=$_POST['Video'];
+			//$model->attributes['timestamp']=date(DATE_ATOM);
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->uuid));
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -83,7 +85,7 @@ class VideoController extends Controller
 		{
 			$model->attributes=$_POST['Video'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->uuid));
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(

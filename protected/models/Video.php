@@ -4,6 +4,7 @@
  * This is the model class for table "video".
  *
  * The followings are the available columns in table 'video':
+ * @property string $id
  * @property string $uuid
  * @property string $thumb_url
  * @property string $small_thumb_url
@@ -28,7 +29,7 @@ class Video extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('uuid, thumb_url, small_thumb_url, video_url, timestamp', 'required'),
+			array('uuid, thumb_url, small_thumb_url, video_url', 'required'),
 			array('uuid', 'length', 'max'=>256),
 			array('thumb_url, small_thumb_url, video_url', 'length', 'max'=>1024),
 			// The following rule is used by search().
@@ -54,6 +55,7 @@ class Video extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'id' => 'Id',
 			'uuid' => 'Uuid',
 			'thumb_url' => 'Thumb Url',
 			'small_thumb_url' => 'Small Thumb Url',
@@ -80,6 +82,7 @@ class Video extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('uuid',$this->uuid,true);
 		$criteria->compare('thumb_url',$this->thumb_url,true);
 		$criteria->compare('small_thumb_url',$this->small_thumb_url,true);

@@ -8,11 +8,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Video', 'url'=>array('index')),
-	array('label'=>'Manage Video', 'url'=>array('admin')),
+	array('label'=>'List Videos', 'url'=>array('index')),
+	array('label'=>'Manage Videos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Video</h1>
+<h1>Record a new video</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+
