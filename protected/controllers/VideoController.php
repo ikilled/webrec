@@ -102,10 +102,19 @@ class VideoController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		// first delete the video from cameratag with their rest api
+		$curl_handle = curl_init('https://cameratag.com/videos/'.$this->loadModel($id)->attributes['uuid'].'.json?api_key=3SNt2nykzWSKXaPDR1zy');
+		curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($curl_handle, CURLOPT_CUSTOMREQUEST, 'DELETE');
+		curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($curl_handle, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt($curl_handle, CURLOPT_SSL_VERIFYPEER,  FALSE);
+		curl_setopt($curl_handle, CURLOPT_POST, 0);
+		curl_setopt($curl_handle, CURLOPT_TIMEOUT, 10);
+		$response = curl_exec($curl_handle);
+		curl_close($curl_handle);
+		//then delete from our local db
 		$this->loadModel($id)->delete();
-		//DELETE  https://cameratag.com/videos/YOUR_RECORDING_UUID.json?api_key=YOUR_API_KEY_HERE
-
-
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));

@@ -10,7 +10,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('uuid')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->uuid), array('view', 'uuid'=>$data->uuid)); ?>
+	<?php echo CHtml::encode($data->uuid); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('thumb_url')); ?>:</b>

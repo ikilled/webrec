@@ -51,10 +51,6 @@
 	<camera id='cam1' data-app-id='a-449347e0-b9da-0131-228e-1231390c0c78'></camera>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('SUBMIT'); ?>
-	</div>
-
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

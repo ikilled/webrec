@@ -675,3 +675,321 @@ in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
 2014/05/11 17:10:33 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
 in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
 in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 18:16:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/view?uuid=v-3bf177d0-bb4c-0131-2373-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php/video/index
+---
+2014/05/11 18:16:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php:336
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webrec/index.php/video/view?uuid=v-3bf177d0-bb4c-0131-2373-1231390c0c78
+HTTP_REFERER=http://localhost/webrec/index.php/video/index
+---
+2014/05/11 18:18:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:156
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(108): VideoController->loadModel('13')
+#1 [internal function]: VideoController->actionDelete('13')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/13
+HTTP_REFERER=http://localhost/webrec/index.php/video/13
+---
+2014/05/11 18:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:156
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(105): VideoController->loadModel('13')
+#1 [internal function]: VideoController->actionDelete('13')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/13
+HTTP_REFERER=http://localhost/webrec/index.php/video/13
+---
+2014/05/11 18:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:157
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(44): VideoController->loadModel('13')
+#1 [internal function]: VideoController->actionView('13')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/13
+HTTP_REFERER=http://localhost/webrec/index.php/video/index
+---
+2014/05/11 18:34:31 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 18:34:31 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 18:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('9')
+#1 [internal function]: VideoController->actionDelete('9')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/9
+HTTP_REFERER=http://localhost/webrec/index.php/video/9
+---
+2014/05/11 18:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('1')
+#1 [internal function]: VideoController->actionDelete('1')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/1?ajax=video-grid
+HTTP_REFERER=http://localhost/webrec/index.php/video/admin
+---
+2014/05/11 18:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('2')
+#1 [internal function]: VideoController->actionDelete('2')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/2?ajax=video-grid
+HTTP_REFERER=http://localhost/webrec/index.php/video/admin
+---
+2014/05/11 18:42:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('4')
+#1 [internal function]: VideoController->actionDelete('4')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/4?ajax=video-grid
+HTTP_REFERER=http://localhost/webrec/index.php/video/admin
+---
+2014/05/11 18:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('8')
+#1 [internal function]: VideoController->actionDelete('8')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/8?ajax=video-grid
+HTTP_REFERER=http://localhost/webrec/index.php/video/admin
+---
+2014/05/11 18:45:22 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 18:45:22 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 00:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:158
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(106): VideoController->loadModel('10')
+#1 [internal function]: VideoController->actionDelete('10')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/delete')
+#17 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webrec/index.php/video/delete/10?ajax=video-grid
+HTTP_REFERER=http://localhost/webrec/index.php/video/admin
+---
+2014/05/12 00:47:31 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 00:47:31 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 00:53:35 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 00:53:35 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:04:54 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:04:54 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:08:29 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:08:29 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:12:47 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:12:47 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:17:28 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:17:28 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:27:50 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:27:50 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:49:03 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/12 01:49:03 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
