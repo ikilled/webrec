@@ -59,7 +59,9 @@ class VideoController extends Controller
 		if(isset($_POST['Video']))
 		{
 			$model->attributes=$_POST['Video'];
-			//$model->attributes['timestamp']=date(DATE_ATOM);
+			$model->setAttributes(array(
+				'timestamp'=>date(DATE_ATOM)
+				),false);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
