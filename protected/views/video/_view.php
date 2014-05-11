@@ -5,8 +5,12 @@
 
 <div class="view">
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('uuid')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->uuid), array('view', 'id'=>$data->uuid)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->uuid), array('view', 'uuid'=>$data->uuid)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('thumb_url')); ?>:</b>

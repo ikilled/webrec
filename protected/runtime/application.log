@@ -625,3 +625,53 @@ in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
 2014/05/11 16:20:53 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
 in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
 in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 17:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:149
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(44): VideoController->loadModel('6666')
+#1 [internal function]: VideoController->actionView('6666')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/6666
+HTTP_REFERER=http://localhost/webrec/index.php/video/index
+---
+2014/05/11 17:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php:149
+Stack trace:
+#0 C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php(44): VideoController->loadModel('6666')
+#1 [internal function]: VideoController->actionView('6666')
+#2 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(VideoController), Array)
+#3 C:\_MATEJ\xampp\htdocs\webrec\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VideoController), Object(ReflectionMethod), Array)
+#4 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\_MATEJ\xampp\htdocs\webrec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\_MATEJ\xampp\htdocs\webrec\framework\web\CWebApplication.php(141): CWebApplication->runController('video/view')
+#14 C:\_MATEJ\xampp\htdocs\webrec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\_MATEJ\xampp\htdocs\webrec\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/webrec/index.php/video/6666
+HTTP_REFERER=http://localhost/webrec/index.php/video/index
+---
+2014/05/11 17:10:33 [warning] [application] Failed to set unsafe attribute "id" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)
+2014/05/11 17:10:33 [warning] [application] Failed to set unsafe attribute "timestamp" of "Video".
+in C:\_MATEJ\xampp\htdocs\webrec\protected\controllers\VideoController.php (61)
+in C:\_MATEJ\xampp\htdocs\webrec\index.php (13)

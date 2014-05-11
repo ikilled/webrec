@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Video', 'url'=>array('index')),
-	array('label'=>'Create Video', 'url'=>array('create')),
+	array('label'=>'Record a new Video', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

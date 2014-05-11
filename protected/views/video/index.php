@@ -12,8 +12,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Record a new video</h1>
-
 
 <h1>List of all Videos</h1>
 

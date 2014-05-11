@@ -103,6 +103,8 @@ class VideoController extends Controller
 	public function actionDelete($id)
 	{
 		$this->loadModel($id)->delete();
+		//DELETE  https://cameratag.com/videos/YOUR_RECORDING_UUID.json?api_key=YOUR_API_KEY_HERE
+
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))

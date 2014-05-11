@@ -9,25 +9,18 @@
 
 	CameraTag.observe('cam1', 'published', function(){
 
-		alert('js published START');
 		var myCamera = CameraTag.cameras["cam1"];
 		var myVideo = myCamera.getVideo();
-		//alert(JSON.stringify(myVideo));
-		//alert(JSON.stringify(myVideo.formats['qvga']));
-		//alert(JSON.stringify(myVideo.formats[0]));
-		//alert(JSON.stringify(myVideo.formats.qvga));
-		//alert(JSON.stringify(myVideo.formats.qvga.video_url));
 
 		document.getElementById('Video_uuid').value = myVideo.uuid;		
 		document.getElementById('Video_video_url').value = myVideo.formats.qvga.video_url;
 		document.getElementById('Video_thumb_url').value = myVideo.formats.qvga.thumb_url;
 		document.getElementById('Video_small_thumb_url').value = myVideo.formats.qvga.small_thumb_url;
 		document.getElementById('Video_timestamp').value = myVideo.created_at;
-		alert('created at: '+myVideo.created_at);
 
-		alert('submitting FORM...');
+		//alert('submitting FORM...');
 		document.getElementById("videoForm").submit();
-		alert('published SUBMITTED END');
+		//alert('published SUBMITTED END');
 
 
 	});	//CameraTag.observe if published
